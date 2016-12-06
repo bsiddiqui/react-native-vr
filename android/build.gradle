@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name: 'audio', ext: 'aar')
+    compile(name: 'base', ext: 'aar')
+    compile(name: 'common', ext: 'aar')
+    compile(name: 'commonwidget', ext: 'aar')
+    compile(name: 'controller', ext: 'aar')
+    compile(name: 'panowidget', ext: 'aar')
+    compile(name: 'videowidget', ext: 'aar')
+    compile 'com.facebook.react:react-native:+'
+    compile 'com.google.android.exoplayer:exoplayer:r1.5.10'
+    compile 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+}

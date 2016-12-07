@@ -27,7 +27,13 @@ import Vr from 'react-native-vr'
 
   render() {
     return <Vr
-      src="https://my-awesome-3d-video.com"
+      src={{
+        uri: 'https://my-awesome-3d-video.com',
+        type: Vr.constants.TYPE.MONO,
+        format: Vr.constants.FORMAT.DEFAULT
+      }}
+      displayMode={Vr.constants.DISPLAY_MODE.EMBEDDED}
+      paused={false}
       style={{ height: 100, width: 100 }} />
   }
 ```

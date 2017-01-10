@@ -1,6 +1,7 @@
 {
   "name": "react-native-vr",
   "version": "0.0.1",
+  "description": "GoogleVR SDK for React native",
   "main": "index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -16,5 +17,11 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "author": "Estate Team <team@tryestate.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estate/react-native-vr/issues"
+  },
+  "homepage": "https://github.com/estate/react-native-vr"
 }
